@@ -1,5 +1,8 @@
 ## Assignment
 
+### Part 1
+#### 
+
 The local G Municipality maintains several libraries for its residents across the municipality.
 For each branch, MLib assigns a branch code (an incremental number for each branch with the
 first branch using a code of 10). The branch name, address and contact phone number are also
@@ -40,3 +43,57 @@ a further loan period provided the book has not been reserved by another borrowe
 simply treated as a new loan for that borrower. Books must be returned to the branch from which
 they were borrowed (the branch owning the book copy).
 A model to represent this system has been developed:
+
+![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/model.PNG)
+
+
+
+### Part 2
+
+County General Hospital treats patients who are identified by a unique patient id. When a patient is
+admitted to the hospital, the hospital records the patient's first and last name, address, date of birth
+and emergency contact number (if they are not already on the system). They also record the date
+and time of admission. The system needs to maintain a record of all admissions for a particular
+patient. When a patient is discharged, the date and time of their discharge for this admission is
+recorded.
+
+While in the hospital each patient is assigned one doctor (identified by a doctor id) as their
+supervising doctor. A patient's supervising doctor may be in charge of many admissions. The
+hospital records each doctor's title, first and last names and phone number. A doctor may have one
+or more specialisations (eg. Orthopaedic, Renal, etc), but not all doctors who work at the hospital
+have a specialisation.
+
+During their admission, patients are prescribed procedures as part of their care by doctors.
+Procedures consist of tests such as "X-Rays", "Blood Tests" etc, they also include medical
+procedures which might be required such as "Shoulder Replacement". A patient may have
+procedures prescribed by their supervising doctor or any other doctor working in the hospital.
+A procedure is identified by a procedure code. Each procedure has a name (such as "Wrist X-Ray")
+and includes a description of what the procedure involves, the time required for the procedure and
+the current standard patient cost for this procedure. When a particular procedure is prescribed
+during a patient’s admission, the date and time when the procedure is carried out is also recorded. A
+particular procedure is completed before any further procedures are run (two procedures cannot
+occur simultaneously). Some procedures, such as blood tests are carried out by technicians, more
+complex procedures may require a doctor to perform the procedure.
+
+If a procedure is carried out by a technician the hospital does not record the details of the technician
+who completed the procedure.
+
+If a doctor carries out the procedure, the doctor who completes the procedure is recorded (the
+doctor who completes the procedure may be different from the doctor who prescribes it). Even if a
+team of doctors is involved in the procedure, only one doctor (the doctor in charge) is recorded as
+completing the procedure.
+
+County General Hospital only records the details of a procedure carried out on an admission after
+the procedure has been completed.
+
+Not all admissions require a procedure to be carried out.
+
+Procedures may require "extra" items such as syringes or swabs. Each item held in stock is
+assigned an item code. The item description, current stock and price are recorded. For accounting
+purposes, each item is assigned to a unique cost centre, such as Pharmacy, Radiography or Patient
+Aids. A cost centre is identified by a cost centre code and has recorded the cost centre title and
+manager's name. The quantity of each item used in a particular procedure is recorded.
+Patients are billed for the cost for the procedure itself and also any "extra" items which are used as
+part of a procedure. The billed charge is based on the procedure/item cost at the date and time of
+the procedure.
+
