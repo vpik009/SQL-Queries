@@ -97,3 +97,83 @@ Patients are billed for the cost for the procedure itself and also any "extra" i
 part of a procedure. The billed charge is based on the procedure/item cost at the date and time of
 the procedure.
 
+Current existing model:
+![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/model2.PNG)
+
+### Queries to complete:
+
+1. List the doctor title, first name, last name and contact phone number for all doctors who specialise
+in the area of "ORTHOPEDIC SURGERY" (this is the specialisation description). Order the list by
+the doctors' last name and within this, if two doctors have the same last name, order them by their
+respective first names.
+
+2. List the item code, item description, item stock and the cost centre title which provides these items
+for all items which have a stock greater than 50 items and include the word 'disposable' in their item
+description. Order the output by the item code.
+
+3. List the patient id, patient's full name as a single column called 'Patient Name', admission date
+and time and the supervising doctor's full name (including title) as a single column called 'Doctor
+Name' for all those patients admitted between 10 AM on 11th of September and 6 PM on the 14th of
+September 2021 (inclusive). Order the output by the admission time with the earliest admission first.
+
+4. List the procedure code, name, description, and standard cost where the procedure is less
+expensive than the average procedure standard cost. The output must show the most expensive
+procedure first. The procedure standard cost must be displayed with two decimal points and a
+leading $ symbol, for example as $120.54
+
+5. List the patient id, last name, first name, date of birth and the number of times the patient has
+been admitted to the hospital where the number of admissions is greater than 2. The output should
+show patients with the most number of admissions first and for patients with the same number of
+admissions, show the patients in their date of birth order.
+
+6. List the admission number, patient id, first name, last name and the length of their stay in the
+hospital for all patients who have been discharged and who were in the hospital longer than the
+average stay for all discharged patients. The length of stay must be shown in the form 10 days 2.0
+hrs where hours are rounded to one decimal digit. The output must be ordered by admission
+number.
+
+7. Given a doctor may charge more or less than the standard charge for a procedure carried out
+during an admission procedure, the hospital administration is interested in finding out what variations
+on the standard price have been charged. The hospital terms the difference between the average
+actual charged procedure cost which has been charged to patients for all such procedures which
+have been carried out the procedure standard cost as the "Procedure Price Differential". For all
+procedures which have been carried out on an admission determine the procedure price differential.
+The list should show the procedure code, name, description, standard time, standard cost and the
+procedure price differential in procedure code order.
+For example procedure 15509 "X-ray, Right knee" has a standard cost of $70.00, it may have been
+charged to admissions on average across all procedures carried out for $75.00 - the price differential
+here will be 75 - 70 that is a price differential +5.00 If the average charge had been say 63.10 the
+price differential will be -6.90.
+
+8. For every procedure, list the items which have been used and the maximum number of those
+items used when the procedure was carried out on an admission. Your list must show the procedure
+code, procedure name, item code and item description and the maximum quantity of this item used
+for the given procedure.
+For example, Vascular Surgery may require one standard anaesthetic pack, and then a number of
+Bupivacaine injections; sometimes one has been used sometimes two - the required listing will
+show:
+
+|                   |                           |                  |                                             |         |
+|:------------------|:-------------------------:|:----------------:|:-------------------------------------------:|--------:|
+|     43556         |     Vascular surgery      |     AN002        |       Std Anaesthetic Pack                  |    1    |
+|     43556         |     Vascular surgery      |     BI500        |       Bupivacaine Inj .5% 10ml Steriamp     |    2    |
+
+
+
+If the procedure has not been carried out on any admission or has not used any items then the item
+code, item description and maximum quantity columns must show "---". The output must be in
+procedure name order and within a procedure in item code order.
+
+
+Find the ninth most expensive procedure/s for a procedure carried out on an admission.
+As an example, say we have the following "dummy" data (note these are just representative
+numbers, they do not reflect the data you have access to):
+The fifth most expensive procedure/s here are those identified by adprc_nos 1240 and 1201 in this
+"dummy" data.
+
+Your report must show the admission procedure number, the procedure code, the admission
+number, the patient id who this procedure was carried out on, the date and time (time in 24 hour
+format) that the procedure was carried out and the total cost for the procedure. The total cost will be
+the cost charged to this patient for this procedure plus the cost for extra items required. The output
+should be in admission procedure number order
+
