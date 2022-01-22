@@ -98,5 +98,5 @@ part of a procedure. The billed charge is based on the procedure/item cost at th
 the procedure.
 
 Current existing model:
-![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/mode2.PNG)
+![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/model2.PNG)
 
