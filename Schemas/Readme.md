@@ -153,8 +153,12 @@ For example, Vascular Surgery may require one standard anaesthetic pack, and the
 Bupivacaine injections; sometimes one has been used sometimes two - the required listing will
 show:
 
-43556 Vascular surgery AN002 Std Anaesthetic Pack 1
-43556 Vascular surgery BI500 Bupivacaine Inj .5% 10ml Steriamp 2
+
+|:------------------|:-------------------------:|:----------------:|:-------------------------------------------:|--------:|
+|     43556         |     Vascular surgery      |     AN002        |       Std Anaesthetic Pack                  |    1    |
+|     43556         |     Vascular surgery      |     BI500        |       Bupivacaine Inj .5% 10ml Steriamp     |    2    |
+
+
 If the procedure has not been carried out on any admission or has not used any items then the item
 code, item description and maximum quantity columns must show "---". The output must be in
 procedure name order and within a procedure in item code order.
