@@ -1,0 +1,158 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="0B11CB3F-C98A-EEC3-E912-CDC97D6CEEE3" name="STAFF">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>B350009B-4C1D-46B4-BE23-0755C53D5706</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="staff_id" id="A185496A-23DE-0997-956E-732AD8335965">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each staff member]]></commentInRDBMS>
+<generatorID>6E822CDD-17A5-F67F-07E7-EE82A861258F</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_fname" id="3FD40C6A-2C14-F8BF-C1C7-6C152DBF1E92">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff member's first name]]></commentInRDBMS>
+<generatorID>1F602B51-5F48-E21D-3FFA-5F46D0B88E77</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_lname" id="B86FC4A7-01B0-A4E7-D2F0-29B502489373">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[staff_member's last name]]></commentInRDBMS>
+<generatorID>813A0CCE-B713-32AC-5852-90114AD12F24</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_phone" id="03B7D27C-D010-4BF9-051F-9A32826BA577">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the staff member's phone number]]></commentInRDBMS>
+<generatorID>8424FD05-0170-5818-560A-E05C43043138</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_start_date" id="3CB8B3B3-3B3C-10A1-7E04-D60FA757C5DB">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date on which the staff member started working]]></commentInRDBMS>
+<generatorID>2E95AF43-BBB4-3CE3-110C-EAF8F00846D3</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_role" id="B44576FC-92DA-4DEA-C77D-EA6693409A1B">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the role of the staff member]]></commentInRDBMS>
+<generatorID>8E7562E3-894A-830E-BF53-DCD2F64A19C7</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="A" description="Administration"/>
+<valueDef value="C" description="Cleaner"/>
+<valueDef value="D" description="Instructor Dry"/>
+<valueDef value="M" description="Manager"/>
+<valueDef value="P" description="Instructor Pool"/>
+<valueDef value="S" description="Sales"/>
+<valueDef value="T" description="Security"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_id" id="85D9DCCF-DAF4-1F0F-9D52-AF6A98F33FDF">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>DFEA9911-3B03-0827-6E25-0575C2789A4B</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="E96F0F85-5C06-FA8F-942C-2CB176F0F1B4" referredColumn="82439F0D-346E-13F1-C76A-9E0B5639F152"/>
+</associations>
+</Column>
+<Column name="staff_first_aid_certified" id="A13F57CC-476E-257E-8578-9C231D0C2861">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[attribute thats specifies whether the staff member is first aid certified
+either y (yes, certified) or n (no, not certified)]]></commentInRDBMS>
+<generatorID>BE068EED-A8E3-E31C-A86B-F3A1559C6646</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="n" description="Is not certified"/>
+<valueDef value="y" description="Is certified"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="9272E541-8FF6-A083-A3A4-34D65EFDD667" name="STAFF_PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>3BA71AEA-74D5-DBE5-74D4-90D0EC791152</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A185496A-23DE-0997-956E-732AD8335965"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="38C605C7-6E26-E574-76F6-22F4961E06B0" name="centre_staff">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>DA7C2C91-79AC-A7CE-8C5F-878DBB2EA9BE</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="85D9DCCF-DAF4-1F0F-9D52-AF6A98F33FDF"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

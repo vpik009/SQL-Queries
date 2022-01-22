@@ -1,0 +1,101 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="22F84643-8465-18A4-D437-F3D188782F89" name="CLASS_STAFFING">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 10:22:12 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="class_staff_leader" id="618ECFE3-94ED-6DFD-DEDF-9958C46A4F3A">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 10:22:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[Attribute specifies whether the staff is a class leader for the related class
+either n (no) or y (yes)]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="n" description="No, the staff is not a class leader"/>
+<valueDef value="y" description="Yes, the staff is a class leader"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="C20B9DE9-02A1-F14A-CE0A-E8BB4BFE96B2">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 10:27:30 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each staff member]]></commentInRDBMS>
+<generatorID>6C2BD815-A365-4BE1-DB00-B193C0864B8D</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>6E822CDD-17A5-F67F-07E7-EE82A861258F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_number" id="84A5FDE2-ABCD-91D8-745D-6D42387A1F17">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 10:33:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of the class  which is unique within each centre]]></commentInRDBMS>
+<generatorID>70DF0277-49F9-303C-036C-B92B89F50BD0</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>745407D6-3661-43F6-D2B8-6348DABEB885</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="9B89B8B0-1CE4-5161-A5CA-DCD096B0B94C">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 10:33:12 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>70DF0277-49F9-303C-036C-B92B89F50BD0</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>DBFF6B94-BE3F-2FD0-C6DD-C650F089260B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="91DBAD0C-3E19-0E34-82D2-46787F1B5D33" name="CLASS_STAFFING PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 10:32:01 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>C20B9DE9-02A1-F14A-CE0A-E8BB4BFE96B2</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,95 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E7821C1E-537F-0ADB-ED93-4136D24CD0B6" name="PAYMENT">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:11:49 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="payment_date" id="A203AB24-0031-C96C-70F9-A119067AD6AE">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:11:53 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date on which the payment was made]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_no" id="BD1BF596-5B72-88A3-433F-AACE53E8A837">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:42:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each member]]></commentInRDBMS>
+<generatorID>D88D0502-452E-10AA-DAEC-F2B90DB5E85C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>5298C39F-AD76-885C-8DC2-CED9961F109A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="payment_total_attend" id="AE52F068-8608-E8CF-B49B-DCF103031B9E">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 09:55:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[The total attendance of the member for the class]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session_no" id="F0C81AB7-62B6-08AE-103D-1C84B250B5A7">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 15:18:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[the session number used as a surrogate key]]></commentInRDBMS>
+<generatorID>423AAEFA-0E39-138A-6CED-85587392C124</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>833654EE-40AA-C543-475D-A0FFD5224ACF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="206EFA53-D92B-4FFE-4BDB-3634493F291F" name="PAYMENT PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:42:19 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>BD1BF596-5B72-88A3-433F-AACE53E8A837</attributeRef>
+<attributeRef>A203AB24-0031-C96C-70F9-A119067AD6AE</attributeRef>
+<attributeRef>F0C81AB7-62B6-08AE-103D-1C84B250B5A7</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

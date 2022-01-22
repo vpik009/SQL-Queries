@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="726D2F6F-28E5-72B3-B54F-D307B204F8AD" name="CLASS_SESSION">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 09:56:17 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="session_date" id="64411870-8287-43EC-3E1E-E6F4493B3D44">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 09:56:22 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date at which the session takes place]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session_attendance" id="56F6A367-9305-0E0A-03BA-0FB24826ABD0">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 09:56:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[Attribute used to specify whether or not a member attended the class]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_number" id="94D358F1-2796-6C65-11DE-2EA342FE87B7">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 10:00:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of the class  which is unique within each centre]]></commentInRDBMS>
+<generatorID>EB5CCDF0-86AA-A91A-CB0F-1A333458B799</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>745407D6-3661-43F6-D2B8-6348DABEB885</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="57351B5D-1E79-CFA2-DC49-1EF34B6B7B66">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 10:00:02 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>EB5CCDF0-86AA-A91A-CB0F-1A333458B799</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>DBFF6B94-BE3F-2FD0-C6DD-C650F089260B</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="session_no" id="833654EE-40AA-C543-475D-A0FFD5224ACF">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 10:31:01 UTC</createdTime>
+<commentInRDBMS><![CDATA[the session number used as a surrogate key]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="24A700F1-CB75-AFD5-AED2-95D93136CF6C" name="SESSION PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 09:56:26 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<newElementsIDs>833654EE-40AA-C543-475D-A0FFD5224ACF</newElementsIDs>
+<usedAttributes>
+<attributeRef>833654EE-40AA-C543-475D-A0FFD5224ACF</attributeRef>
+</usedAttributes>
+</identifier>
+<identifier id="BFDBCF7A-2F94-F645-BDF0-F475D360CFC1" name="CLASS_SESSION_NK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 10:32:39 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="false"/>
+</engineerTo>
+<newElementsIDs>57351B5D-1E79-CFA2-DC49-1EF34B6B7B66,94D358F1-2796-6C65-11DE-2EA342FE87B7,64411870-8287-43EC-3E1E-E6F4493B3D44</newElementsIDs>
+<usedAttributes>
+<attributeRef>57351B5D-1E79-CFA2-DC49-1EF34B6B7B66</attributeRef>
+<attributeRef>94D358F1-2796-6C65-11DE-2EA342FE87B7</attributeRef>
+<attributeRef>64411870-8287-43EC-3E1E-E6F4493B3D44</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

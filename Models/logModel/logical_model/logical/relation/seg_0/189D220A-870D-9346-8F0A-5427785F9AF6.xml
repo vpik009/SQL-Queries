@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="facility_class" directorySegmentName="seg_0" id="189D220A-870D-9346-8F0A-5427785F9AF6">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:40:39 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<sourcePk>FE1434AD-1C21-0A34-0C5C-946773E6702C</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>hosts</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>E57CFC0E-A16B-6856-F734-6AEB43170D99</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>A20684B2-F913-1389-5A61-C00E8E086C96</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

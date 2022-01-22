@@ -1,0 +1,62 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="49545C7C-5B8B-B16B-BCFF-F1E22F367255" name="CENTRE_CLASS_TYPE">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 15:19:31 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="class_type" id="E2EABFA3-BBEA-5FBF-5731-0021EE29966A">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 15:19:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[the type of class.]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_type_id" id="3FC7E5DE-3CF5-9BD3-28A0-90CFC57DCB63">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 15:37:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for class type]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="481A6271-C7B7-5AE0-3A21-93CF05DAA1C6" name="CENTRE_CLASS_TYPE PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 15:28:45 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>3FC7E5DE-3CF5-9BD3-28A0-90CFC57DCB63</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

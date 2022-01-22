@@ -1,0 +1,85 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="E57CFC0E-A16B-6856-F734-6AEB43170D99" name="FACILITY">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:12:36 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="facility_room_no" id="D5389C20-A72C-1295-978B-C5A7F3CDBF36">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:12:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of the facility which is unique within each centre.]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_name" id="9820A81B-198C-088F-A49C-E7A7E7EFF563">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:13:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[the name of the facility]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_capacity" id="29EFF67E-D68E-F4F0-8AD4-92DE749E7996">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:13:32 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of members+staff the facility can accommodate]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_desc" id="819C4CE3-43FE-85F7-435D-A02933303A6D">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:13:55 UTC</createdTime>
+<commentInRDBMS><![CDATA[the description of the facility]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="39404AEE-0BC3-D9BA-087A-A85FEDC9E5CF">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:39:34 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>E2806640-0E76-8906-659F-AE26B2AF50F6</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<referedAttribute>AA72A87A-F444-5365-D1E6-39E1989A84DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="FE1434AD-1C21-0A34-0C5C-946773E6702C" name="FACILITY PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:12:48 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>D5389C20-A72C-1295-978B-C5A7F3CDBF36</attributeRef>
+<attributeRef>39404AEE-0BC3-D9BA-087A-A85FEDC9E5CF</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

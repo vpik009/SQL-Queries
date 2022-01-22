@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="A51FA052-722B-616F-75CE-CC8639F9F5BE" name="CENTRE">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>5F8E9AF3-0B12-F94F-EB93-C79EB8180EFE</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="centre_id" id="82439F0D-346E-13F1-C76A-9E0B5639F152">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>AA72A87A-F444-5365-D1E6-39E1989A84DC</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_name" id="FFA8BE22-029B-BF6A-A35E-1AF414275412">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the name of the centre]]></commentInRDBMS>
+<generatorID>ABD393DD-C0B5-D3EA-129C-812F59365616</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_street" id="99E9F37A-3F3E-A92D-71FD-D63C79C2C704">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the street number/name where the centre is located]]></commentInRDBMS>
+<generatorID>B122BF31-B248-79B5-E453-84EA3F65646F</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_town" id="8EDC1FA9-7BEF-AFC6-3D77-6D766DE264F2">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the town name in which the centre is located]]></commentInRDBMS>
+<generatorID>7B068828-45F5-6F26-E031-1DD2787B2B79</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_postcode" id="CCE6C0FD-B408-8B5D-965C-BA8474EB40AE">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the postcode of the area where the centre is located]]></commentInRDBMS>
+<generatorID>E2F5B9BC-045F-52E4-9D6D-2C0B66E28DB6</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="centre_phone" id="ED467E9D-DBAE-00BF-783E-E769F51BDDE3">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the phone number of the centre]]></commentInRDBMS>
+<generatorID>5E514A68-A4C7-6362-6B33-2ED0C82FFF6D</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="A67884E3-FB07-FE86-CFED-3626E2D4B752">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each staff member]]></commentInRDBMS>
+<generatorID>0820F053-8C54-A951-4236-B8BE37BDAD1C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="6DE63870-5698-654F-0310-F03965C3381A" referredColumn="A185496A-23DE-0997-956E-732AD8335965"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="58433240-14FC-C31C-D004-E290EAF01325" name="CENTRE_PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>F6B406CD-9396-3781-0346-7D79D71BAEE5</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="82439F0D-346E-13F1-C76A-9E0B5639F152"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="ED5BE309-5EDC-8914-5737-401B56D542E4" name="CENTRE__IDX">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Unique Plain Index</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<relationGeneratorID>03A49E8C-F668-FBCF-A80C-C1AF17A2658E</relationGeneratorID>
+<indexColumnUsage>
+<colUsage columnID="A67884E3-FB07-FE86-CFED-3626E2D4B752"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="786A6F07-A2DB-25E0-853F-415D11678AC7" name="staff_centre_manager">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>03A49E8C-F668-FBCF-A80C-C1AF17A2658E</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="A67884E3-FB07-FE86-CFED-3626E2D4B752"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

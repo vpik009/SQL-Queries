@@ -1,0 +1,202 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="A20684B2-F913-1389-5A61-C00E8E086C96" name="CENTRE_CLASS">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:17:39 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="class_number" id="745407D6-3661-43F6-D2B8-6348DABEB885">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:17:43 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of the class  which is unique within each centre]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_desc" id="762EA1EA-C8D4-0899-63C9-BC64FB8ECBAE">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:18:09 UTC</createdTime>
+<commentInRDBMS><![CDATA[the description of the class]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>50</dataTypeSize>
+<ownDataTypeParameters>50,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_start_datetime" id="110DC97A-FDAD-1E1B-F89E-C33AA5F31ABB">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:18:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date and time of the start of the first session of the class]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_capacity" id="AE7E5AA1-18DF-D25A-F700-31B594A40F37">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:19:21 UTC</createdTime>
+<commentInRDBMS><![CDATA[the capacity of the class indicating the number of staff+members it can accommodate]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<ownDataTypeParameters>,3,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_cost" id="8E851661-0043-1729-B341-0831724A0E99">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:19:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[the price of taking the class]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>6</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,6,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_no_sess" id="8442533A-4069-15D7-6764-A8E073563B1B">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:20:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of sessions this class has]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>5</dataTypePrecision>
+<ownDataTypeParameters>,5,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_gender" id="909AAD81-90D9-4AE6-5370-C13F7A5FF4CD">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:20:40 UTC</createdTime>
+<commentInRDBMS><![CDATA[the gender that this class is restricted to.
+either n (not specified), m (male), f (female)]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="f" description="female"/>
+<valueDef value="m" description="male"/>
+<valueDef value="n" description="not specified"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="facility_room_no" id="25BAB671-8626-FB15-CFFF-29BDAB22B41A">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:40:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of the facility which is unique within each centre.]]></commentInRDBMS>
+<generatorID>189D220A-870D-9346-8F0A-5427785F9AF6</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>D5389C20-A72C-1295-978B-C5A7F3CDBF36</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="DBFF6B94-BE3F-2FD0-C6DD-C650F089260B">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:40:39 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>189D220A-870D-9346-8F0A-5427785F9AF6</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>39404AEE-0BC3-D9BA-087A-A85FEDC9E5CF</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_duration" id="A2838A99-55BA-0488-92DD-1EC31CC12922">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 11:18:11 UTC</createdTime>
+<commentInRDBMS><![CDATA[the duration of the class represented to 2 decimal places]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>2</dataTypeScale>
+<ownDataTypeParameters>,3,2</ownDataTypeParameters>
+</Attribute>
+<Attribute name="class_type_id" id="120C44DD-FF6C-E0FA-370F-2FE23FBF4380">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-15 15:38:15 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for class type]]></commentInRDBMS>
+<generatorID>81DCAD34-E87F-47DE-5C83-02F8C268276C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>3FC7E5DE-3CF5-9BD3-28A0-90CFC57DCB63</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="263FDFCF-27F0-1D5E-4F04-0E0BB85E776A" name="CLASS PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:18:13 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>745407D6-3661-43F6-D2B8-6348DABEB885</attributeRef>
+<attributeRef>DBFF6B94-BE3F-2FD0-C6DD-C650F089260B</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="refers" directorySegmentName="seg_0" id="4F585709-B306-49BE-61F3-C861DD1BAAB0">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:45:41 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<targetPk>892DA3A6-7385-411D-519B-0FA108A07B83</targetPk>
+<identifying>false</identifying>
+<nameOnSource>refers</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>true</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9B997754-AC72-A4AF-6C8E-671B00287CA5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>9B997754-AC72-A4AF-6C8E-671B00287CA5</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

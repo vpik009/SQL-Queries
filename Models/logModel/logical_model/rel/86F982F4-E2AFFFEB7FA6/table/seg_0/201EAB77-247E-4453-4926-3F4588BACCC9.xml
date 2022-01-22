@@ -1,0 +1,118 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="201EAB77-247E-4453-4926-3F4588BACCC9" name="CLASS_STAFFING">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>22F84643-8465-18A4-D437-F3D188782F89</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="class_staff_leader" id="78A90F62-FF67-F6EC-1C1F-9337B1D61A61">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Attribute specifies whether the staff is a class leader for the related class
+either n (no) or y (yes)]]></commentInRDBMS>
+<generatorID>618ECFE3-94ED-6DFD-DEDF-9958C46A4F3A</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<listOfValues>
+<valueDef value="n" description="No, the staff is not a class leader"/>
+<valueDef value="y" description="Yes, the staff is a class leader"/>
+</listOfValues>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="DD376933-61BA-591D-C322-FF74751B1637">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each staff member]]></commentInRDBMS>
+<generatorID>C20B9DE9-02A1-F14A-CE0A-E8BB4BFE96B2</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="56C7912D-4AF3-8AE3-4EE0-10E0EEA89BB1" referredColumn="A185496A-23DE-0997-956E-732AD8335965"/>
+</associations>
+</Column>
+<Column name="class_number" id="6F745E6B-9D70-D18A-1633-102E74192D65">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of the class  which is unique within each centre]]></commentInRDBMS>
+<generatorID>84A5FDE2-ABCD-91D8-745D-6D42387A1F17</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FE4831C-A5DA-F88A-F3C2-3C116012965B" referredColumn="519FD380-12C5-2145-95CE-987F7C97FBEF"/>
+</associations>
+</Column>
+<Column name="centre_id" id="03772383-CD67-276E-5FF0-CD672D087E08">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>9B89B8B0-1CE4-5161-A5CA-DCD096B0B94C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="5FE4831C-A5DA-F88A-F3C2-3C116012965B" referredColumn="44FC9C08-0CB6-18B6-34A4-D96CFA24BB91"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="2C0C49BD-5895-737A-DEEC-E22D6D347E49" name="CLASS_STAFFING_PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>91DBAD0C-3E19-0E34-82D2-46787F1B5D33</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD376933-61BA-591D-C322-FF74751B1637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="86B18BCB-2BFD-22CB-ADE5-F00BF559D7BD" name="Relation_14">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>70DF0277-49F9-303C-036C-B92B89F50BD0</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6F745E6B-9D70-D18A-1633-102E74192D65"/>
+<colUsage columnID="03772383-CD67-276E-5FF0-CD672D087E08"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="613EA1A2-1B32-A1D8-EBA1-5E26B69BB234" name="staff_class_staffing">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>6C2BD815-A365-4BE1-DB00-B193C0864B8D</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="DD376933-61BA-591D-C322-FF74751B1637"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

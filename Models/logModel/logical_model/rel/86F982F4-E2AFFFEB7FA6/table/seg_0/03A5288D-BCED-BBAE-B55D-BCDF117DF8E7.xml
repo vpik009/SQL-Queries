@@ -1,0 +1,123 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="03A5288D-BCED-BBAE-B55D-BCDF117DF8E7" name="CLASS_SESSION">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>726D2F6F-28E5-72B3-B54F-D307B204F8AD</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="session_date" id="7B5FD295-90C7-976F-8976-C24B9A7EBAAA">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date at which the session takes place]]></commentInRDBMS>
+<generatorID>64411870-8287-43EC-3E1E-E6F4493B3D44</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="session_attendance" id="859359AF-97C6-6776-BF14-76FC352DC14C">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[Attribute used to specify whether or not a member attended the class]]></commentInRDBMS>
+<generatorID>56F6A367-9305-0E0A-03BA-0FB24826ABD0</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT025</logicalDatatype>
+<dataTypeSize>1</dataTypeSize>
+<ownDataTypeParameters>1,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="class_number" id="D219924F-25A3-2F01-741E-9CF5D99B4770">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the number of the class  which is unique within each centre]]></commentInRDBMS>
+<generatorID>94D358F1-2796-6C65-11DE-2EA342FE87B7</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23E5F0F9-43E3-9520-C7DE-E2138D1E2A27" referredColumn="519FD380-12C5-2145-95CE-987F7C97FBEF"/>
+</associations>
+</Column>
+<Column name="centre_id" id="D2C1F3D1-0AE0-2A7A-1D60-F25F6EEF875B">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>57351B5D-1E79-CFA2-DC49-1EF34B6B7B66</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="23E5F0F9-43E3-9520-C7DE-E2138D1E2A27" referredColumn="44FC9C08-0CB6-18B6-34A4-D96CFA24BB91"/>
+</associations>
+</Column>
+<Column name="session_no" id="E61CDB4A-C650-568F-B4D5-19EE22601A59">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the session number used as a surrogate key]]></commentInRDBMS>
+<generatorID>833654EE-40AA-C543-475D-A0FFD5224ACF</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="DAA1AB4B-9DF0-4006-5578-ED8173A4317E" name="SESSION_PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>24A700F1-CB75-AFD5-AED2-95D93136CF6C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="E61CDB4A-C650-568F-B4D5-19EE22601A59"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="E7B1C63B-994C-E5B5-C02B-6B980E539569" name="CLASS_SESSION_NK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>BFDBCF7A-2F94-F645-BDF0-F475D360CFC1</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Unique Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D2C1F3D1-0AE0-2A7A-1D60-F25F6EEF875B"/>
+<colUsage columnID="D219924F-25A3-2F01-741E-9CF5D99B4770"/>
+<colUsage columnID="7B5FD295-90C7-976F-8976-C24B9A7EBAAA"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="5EFC8E44-E4D0-BFE8-A8B4-4BD1D241F458" name="Relation_13">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>EB5CCDF0-86AA-A91A-CB0F-1A333458B799</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="D219924F-25A3-2F01-741E-9CF5D99B4770"/>
+<colUsage columnID="D2C1F3D1-0AE0-2A7A-1D60-F25F6EEF875B"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

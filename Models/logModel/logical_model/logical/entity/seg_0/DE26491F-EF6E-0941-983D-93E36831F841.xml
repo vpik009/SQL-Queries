@@ -1,0 +1,143 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="DE26491F-EF6E-0941-983D-93E36831F841" name="ASSESSMENT">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:15:00 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="assess_date" id="8EE4078D-4032-C06D-B9B8-EA252A891D3E">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:15:05 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date on which this assessment was carried out]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assess_bmi" id="0E29661E-3549-60DE-7DD4-55662452DDFC">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:15:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the bmi of the member who took this assessment]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assess_weigh" id="3B3B052A-D25E-AE12-D690-537662F6C22A">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:15:46 UTC</createdTime>
+<commentInRDBMS><![CDATA[the weight of the member who took this assessment]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,4,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assess_blood_press" id="FDFEB966-8ECD-762E-9BED-115576EB9ABA">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:16:08 UTC</createdTime>
+<commentInRDBMS><![CDATA[the blood pressure of the member who took this assessment]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="assess_vo2max" id="3976F959-DD79-13E2-0B16-DFC62ECB9E9C">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:16:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[the vo2max of the member who took this assessment]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+</Attribute>
+<Attribute name="staff_id" id="5821DB81-8E89-30CE-9E21-B9A6BA0203FC">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:36:54 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each staff member]]></commentInRDBMS>
+<generatorID>7806D5F5-B810-7302-95B6-197CD659EBBA</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>6E822CDD-17A5-F67F-07E7-EE82A861258F</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_no" id="50FF26DD-6F0A-1A07-6A2D-099793A2D282">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:37:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each member]]></commentInRDBMS>
+<generatorID>B45D6ED8-A3AC-88CE-EBBF-54200AB63349</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>5298C39F-AD76-885C-8DC2-CED9961F109A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="F366B694-73AB-D6B4-234E-C6ED0EA4FF7C" name="ASSESSMENT PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:15:23 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<shouldEngineer>false</shouldEngineer>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="false"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>8EE4078D-4032-C06D-B9B8-EA252A891D3E</attributeRef>
+<attributeRef>50FF26DD-6F0A-1A07-6A2D-099793A2D282</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>

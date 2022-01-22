@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="staff_class_staffing" directorySegmentName="seg_0" id="6C2BD815-A365-4BE1-DB00-B193C0864B8D">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 10:27:30 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<sourcePk>3BA71AEA-74D5-DBE5-74D4-90D0EC791152</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>is involved in</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B350009B-4C1D-46B4-BE23-0755C53D5706</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>22F84643-8465-18A4-D437-F3D188782F89</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

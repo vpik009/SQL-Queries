@@ -1,0 +1,21 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="staff_assignment" directorySegmentName="seg_0" id="7806D5F5-B810-7302-95B6-197CD659EBBA">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:36:54 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<sourcePk>3BA71AEA-74D5-DBE5-74D4-90D0EC791152</sourcePk>
+<identifying>false</identifying>
+<nameOnSource>supervises</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>B350009B-4C1D-46B4-BE23-0755C53D5706</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>DE26491F-EF6E-0941-983D-93E36831F841</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

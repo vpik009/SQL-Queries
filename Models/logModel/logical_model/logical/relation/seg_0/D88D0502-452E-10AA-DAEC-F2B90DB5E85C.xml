@@ -1,0 +1,18 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Relation class="oracle.dbtools.crest.model.design.logical.Relation" name="member_payment" directorySegmentName="seg_0" id="D88D0502-452E-10AA-DAEC-F2B90DB5E85C">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:42:34 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<sourcePk>892DA3A6-7385-411D-519B-0FA108A07B83</sourcePk>
+<identifying>true</identifying>
+<nameOnSource>makes</nameOnSource>
+<nameOnTarget> </nameOnTarget>
+<optionalSource>true</optionalSource>
+<optionalTarget>false</optionalTarget>
+<sourceCardinality>1</sourceCardinality>
+<sourceEntity>9B997754-AC72-A4AF-6C8E-671B00287CA5</sourceEntity>
+<targetCardinalityString>*</targetCardinalityString>
+<targetEntity>E7821C1E-537F-0ADB-ED93-4136D24CD0B6</targetEntity>
+<transferable>true</transferable>
+<deleteRule>NO ACTION</deleteRule>
+</Relation>

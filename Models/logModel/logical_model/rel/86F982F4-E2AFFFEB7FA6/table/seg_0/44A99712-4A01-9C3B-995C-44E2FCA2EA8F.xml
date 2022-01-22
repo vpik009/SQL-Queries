@@ -1,0 +1,154 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Table class="oracle.dbtools.crest.model.design.relational.Table" directorySegmentName="seg_0" id="44A99712-4A01-9C3B-995C-44E2FCA2EA8F" name="ASSESSMENT">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>DE26491F-EF6E-0941-983D-93E36831F841</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<allowColumnReorder>false</allowColumnReorder>
+<existDependencyGenerateInDDl>true</existDependencyGenerateInDDl>
+<parsed>true</parsed>
+<columns itemClass="oracle.dbtools.crest.model.design.relational.Column">
+<Column name="assess_date" id="3068BB10-DFA4-CEDD-D7F0-B72868E45B90">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date on which this assessment was carried out]]></commentInRDBMS>
+<generatorID>8EE4078D-4032-C06D-B9B8-EA252A891D3E</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_bmi" id="BBCA6DA4-C5D5-D8EC-1C6E-4890BBBB5161">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the bmi of the member who took this assessment]]></commentInRDBMS>
+<generatorID>0E29661E-3549-60DE-7DD4-55662452DDFC</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_weigh" id="7C761CB4-B251-5797-C519-53485062671B">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the weight of the member who took this assessment]]></commentInRDBMS>
+<generatorID>3B3B052A-D25E-AE12-D690-537662F6C22A</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>4</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,4,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_blood_press" id="22DEC037-11C8-C9EC-FC15-172BA2F0C40C">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the blood pressure of the member who took this assessment]]></commentInRDBMS>
+<generatorID>FDFEB966-8ECD-762E-9BED-115576EB9ABA</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>7</dataTypeSize>
+<ownDataTypeParameters>7,,</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="assess_vo2max" id="3EFAC3A7-717C-9991-9BBA-6C770F1AEE56">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[the vo2max of the member who took this assessment]]></commentInRDBMS>
+<generatorID>3976F959-DD79-13E2-0B16-DFC62ECB9E9C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<nullsAllowed>true</nullsAllowed>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>3</dataTypePrecision>
+<dataTypeScale>1</dataTypeScale>
+<ownDataTypeParameters>,3,1</ownDataTypeParameters>
+<autoIncrementCycle>false</autoIncrementCycle>
+</Column>
+<Column name="staff_id" id="2A5C8AE1-A681-047D-5130-E55E40004AFB">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each staff member]]></commentInRDBMS>
+<generatorID>5821DB81-8E89-30CE-9E21-B9A6BA0203FC</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="48BF84CE-AB2B-BCB0-30DB-A8BC212A122D" referredColumn="A185496A-23DE-0997-956E-732AD8335965"/>
+</associations>
+</Column>
+<Column name="member_no" id="6D83CD89-AEFD-A12B-2E05-D3DF51344CA3">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each member]]></commentInRDBMS>
+<generatorID>50FF26DD-6F0A-1A07-6A2D-099793A2D282</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+<previousColumn>false</previousColumn>
+<autoIncrementCycle>false</autoIncrementCycle>
+<associations>
+<colAssociation fkAssociation="25FAB7CC-BE94-102A-9F9D-BEEC73D05350" referredColumn="5A8FB081-B066-4F80-7D9B-1C79D758AD5A"/>
+</associations>
+</Column>
+</columns>
+<indexes itemClass="oracle.dbtools.crest.model.design.relational.Index">
+<ind_PK_UK id="A6A401E7-E2B7-160B-521F-C35B1C08317F" name="ASSESSMENT_PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>F366B694-73AB-D6B4-234E-C6ED0EA4FF7C</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<pk>true</pk>
+<indexState>Primary Constraint</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="3068BB10-DFA4-CEDD-D7F0-B72868E45B90"/>
+<colUsage columnID="6D83CD89-AEFD-A12B-2E05-D3DF51344CA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="85B5608D-06E2-BD56-5E20-B6C47C35300E" name="member_assignment">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>B45D6ED8-A3AC-88CE-EBBF-54200AB63349</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="6D83CD89-AEFD-A12B-2E05-D3DF51344CA3"/>
+</indexColumnUsage>
+</ind_PK_UK>
+<ind_PK_UK id="131327A0-FB96-25CE-440E-E98BB596AED7" name="staff_assignment">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-16 14:00:27 UTC</createdTime>
+<generatorID>7806D5F5-B810-7302-95B6-197CD659EBBA</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<indexState>Foreign Key</indexState>
+<isSurrogateKey>false</isSurrogateKey>
+<indexColumnUsage>
+<colUsage columnID="2A5C8AE1-A681-047D-5130-E55E40004AFB"/>
+</indexColumnUsage>
+</ind_PK_UK>
+</indexes>
+</Table>

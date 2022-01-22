@@ -1,0 +1,177 @@
+<?xml version = '1.0' encoding = 'UTF-8'?>
+<Entity class="oracle.dbtools.crest.model.design.logical.Entity" directorySegmentName="seg_0" id="9B997754-AC72-A4AF-6C8E-671B00287CA5" name="MEMBER">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:06:13 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<adequatelyNormalized>NO</adequatelyNormalized>
+<expectedVolumes>0</expectedVolumes>
+<fwdEngineeringStrategyName>Single Table</fwdEngineeringStrategyName>
+<growthPercent>0</growthPercent>
+<growthType>Year</growthType>
+<maxVolumes>9999999</maxVolumes>
+<minVolumes>0</minVolumes>
+<normalForm>Third</normalForm>
+<attributes itemClass="oracle.dbtools.crest.model.design.logical.Attribute">
+<Attribute name="member_no" id="5298C39F-AD76-885C-8DC2-CED9961F109A">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:06:17 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each member]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_fname" id="EA790A17-0329-F979-8773-91CCAE592988">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:06:36 UTC</createdTime>
+<commentInRDBMS><![CDATA[member's first name]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_lname" id="11689310-AFE3-5B27-3020-14529B7940F9">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:07:51 UTC</createdTime>
+<commentInRDBMS><![CDATA[member's last name]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_join_date" id="249D0320-05EE-AF47-7ADD-4133746B4351">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:08:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[the date on which the member joined]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT007</logicalDatatype>
+<ownDataTypeParameters>,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_phone" id="95A89B40-DE8F-9C08-20E8-6D8C689DED8F">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:09:23 UTC</createdTime>
+<commentInRDBMS><![CDATA[member's phone number]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>12</dataTypeSize>
+<ownDataTypeParameters>12,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_street" id="4DC1F822-4123-AE31-BC5F-6358D77F31FF">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:09:33 UTC</createdTime>
+<commentInRDBMS><![CDATA[the street name/number where the member resides]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_town" id="929F645F-040C-94D4-2B98-ED6A90DEB349">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:09:47 UTC</createdTime>
+<commentInRDBMS><![CDATA[the town name of where the member resides]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>20</dataTypeSize>
+<ownDataTypeParameters>20,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="member_postcode" id="F921971C-01CD-210C-D153-D8F0E86AB090">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:10:14 UTC</createdTime>
+<commentInRDBMS><![CDATA[postcode of the area where the member resides]]></commentInRDBMS>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT024</logicalDatatype>
+<dataTypeSize>8</dataTypeSize>
+<ownDataTypeParameters>8,,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="centre_id" id="8D0B6EFA-2660-2793-E06E-D34D804657FA">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:43:13 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each centre]]></commentInRDBMS>
+<generatorID>90ABCDE2-C04B-F1F7-A0AE-BAE77F92E03D</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<referedAttribute>AA72A87A-F444-5365-D1E6-39E1989A84DC</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+<Attribute name="referred_by" id="E804ABA3-32FB-572F-017D-FCD90C4236C6">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:45:41 UTC</createdTime>
+<commentInRDBMS><![CDATA[unique identifier for each member]]></commentInRDBMS>
+<generatorID>4F585709-B306-49BE-61F3-C861DD1BAAB0</generatorID>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<nullsAllowed>true</nullsAllowed>
+<referedAttribute>5298C39F-AD76-885C-8DC2-CED9961F109A</referedAttribute>
+<useDomainConstraints>false</useDomainConstraints>
+<use>1</use>
+<logicalDatatype>LOGDT019</logicalDatatype>
+<dataTypePrecision>7</dataTypePrecision>
+<ownDataTypeParameters>,7,</ownDataTypeParameters>
+</Attribute>
+</attributes>
+<identifiers itemClass="oracle.dbtools.crest.model.design.logical.CandidateKey">
+<identifier id="892DA3A6-7385-411D-519B-0FA108A07B83" name="MEMBER PK">
+<createdBy>vpik0</createdBy>
+<createdTime>2021-09-14 07:08:01 UTC</createdTime>
+<ownerDesignName>logical_model</ownerDesignName>
+<engineerTo>
+<item key="86F982F4-5F24-8F09-D9A0-E2AFFFEB7FA6" value="true"/>
+</engineerTo>
+<pk>true</pk>
+<usedAttributes>
+<attributeRef>5298C39F-AD76-885C-8DC2-CED9961F109A</attributeRef>
+</usedAttributes>
+</identifier>
+</identifiers>
+</Entity>
