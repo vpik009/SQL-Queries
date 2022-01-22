@@ -44,7 +44,7 @@ simply treated as a new loan for that borrower. Books must be returned to the br
 they were borrowed (the branch owning the book copy).
 A model to represent this system has been developed:
 
-![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/model.PNG)
+![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/ReadmeImages/model.PNG)
 
 
 
@@ -98,7 +98,7 @@ part of a procedure. The billed charge is based on the procedure/item cost at th
 the procedure.
 
 Current existing model:
-![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/model2.PNG)
+![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/ReadmeImages/model2.PNG)
 
 ### Queries to complete:
 
