@@ -40,3 +40,5 @@ a further loan period provided the book has not been reserved by another borrowe
 simply treated as a new loan for that borrower. Books must be returned to the branch from which
 they were borrowed (the branch owning the book copy).
 A model to represent this system has been developed:
+
+![alt text](model.png)
