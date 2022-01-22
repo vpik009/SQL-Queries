@@ -97,3 +97,6 @@ Patients are billed for the cost for the procedure itself and also any "extra" i
 part of a procedure. The billed charge is based on the procedure/item cost at the date and time of
 the procedure.
 
+Current existing model:
+![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/mode2.PNG)
+
