@@ -156,6 +156,7 @@ show:
 |     43556         |     Vascular surgery      |     AN002        |       Std Anaesthetic Pack                  |    1    |
 |:------------------|:-------------------------:|:----------------:|:-------------------------------------------:|--------:|
 |     43556         |     Vascular surgery      |     BI500        |       Bupivacaine Inj .5% 10ml Steriamp     |    2    |
+|:------------------|:-------------------------:|:----------------:|:-------------------------------------------:|--------:|
 
 
 If the procedure has not been carried out on any admission or has not used any items then the item
