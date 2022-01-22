@@ -5,6 +5,7 @@ support the activities of a fitness center business called Monash Movement.
 Monash Movement operates a number of fitness centres located in towns and cities
 across the country. People can join up and become a member of Monash Movement to
 make use of the facilities and classes which are available.
+
 Each fitness centre is identified by a centre id. The data which is to be recorded about a
 centre is the centre’s name, address and phone number. Each centre employs a number
 of staff to help it carry out its various activities. Each staff member is identified by a staff id.
@@ -12,6 +13,7 @@ The staff member’s first (or given) name, last (or family) name, mobile number
 they started at the centre and role (the type of job they carry out) are recorded. One of the
 appointed staff members of the centre, manages the centre (a center is required to have a
 manager assigned before it can operate).
+
 Each centre has a number of facilities such as Gymnasium, Spin Room, Swimming Pool,
 Aerobic Exercise Room, etc. Each of these facilities is identified by a facility room number.
 These room numbers are not unique across Monash Movement, room numbers are
@@ -24,6 +26,7 @@ number (these class numbers are not unique across Monash Movement - for example
 every centre will have a class number, say 10 ). The class description (eg. HIT), the start
 date and time, and the maximum number of participants are recorded. The number of
 Page 1 of 7
+
 sessions for each class and the class cost are also recorded. Some classes only run one
 session, others run several sessions in which each session will be run on the same day
 and time each week. Only the start date and time of the first session in each class is
@@ -38,11 +41,13 @@ whether a new member was referred (recommended to join) by a current member. Mon
 Movement members are required to nominate a particular centre as their home centre.
 Although they have a home centre, members are entitled to enrol for the classes run at
 any of the Monash Movement centres.
+
 Monash Movement wishes to record which members sign up for which classes. Members
 who have enrolled in a particular class are required to pay for the class before the class
 actually begins, the date the member paid is recorded. Payment is a once off payment for
 the class, covering all sessions. If a class has more than one session and a member does
 not attend some sessions, the cost of the class does not change.
+
 Qualified staff at each centre offer fitness assessments to members - these are optional, a
 member may not complete any assessments or they may complete several. The date the
 assessment was completed and the staff member who ran the assessment are recorded
