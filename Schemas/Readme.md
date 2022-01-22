@@ -153,9 +153,8 @@ For example, Vascular Surgery may require one standard anaesthetic pack, and the
 Bupivacaine injections; sometimes one has been used sometimes two - the required listing will
 show:
 
-|                   |                           |                  |                                             |         |
-|:------------------|:-------------------------:|:----------------:|:-------------------------------------------:|--------:|
 |     43556         |     Vascular surgery      |     AN002        |       Std Anaesthetic Pack                  |    1    |
+|:------------------|:-------------------------:|:----------------:|:-------------------------------------------:|--------:|
 |     43556         |     Vascular surgery      |     BI500        |       Bupivacaine Inj .5% 10ml Steriamp     |    2    |
 
 
