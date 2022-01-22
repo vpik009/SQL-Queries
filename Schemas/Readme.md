@@ -41,4 +41,4 @@ simply treated as a new loan for that borrower. Books must be returned to the br
 they were borrowed (the branch owning the book copy).
 A model to represent this system has been developed:
 
-![alt text](model.png)
+![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/model.PNG)
