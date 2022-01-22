@@ -47,6 +47,52 @@ A model to represent this system has been developed:
 ![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/model.PNG)
 
 
+### Queries to Complete
+
+1 Add to T1-ml-schm.sql, the CREATE TABLE and CONSTRAINT definitions which are
+missing from the supplied partial schema script in the positions indicated by the
+comments in the script. Appendix A provides details of the meaning of the attributes in
+the missing three tables. You MUST use exactly the same relation and attribute names
+shown in the data model above to name tables and attributes which you add. The
+schema file for 1.1 must be hand coded, not generated in any manner.
+To test your code you will need to first run the provided script
+mlib_initialSchemaInsert.sql to create the other required tables.
+
+2 Add the full set of DROP TABLE statements to T1-ml-drop.sql in the location indicated
+by the 'Add Drop table statements'… comment. This should drop all of the tables
+created by the supplied partial schema script and your answer to 1.1 it does not need to
+drop any subsequent tables you may create for task 3. In completing this section you
+must not use the CASCADE CONSTRAINTS clause as part of your DROP TABLE
+statement (you must however include the PURGE clause). For example a drop table
+statement will have the form
+
+(a) Load the BOOK_COPY, LOAN and RESERVE tables with your own test data using
+the supplied T2-ml-insert.sql file script file, and SQL commands which will insert as
+a minimum, the following sample data -
+  (i) 10 BOOK_COPIES (you may select any reasonable purchase price)
+    ● representing at least 3 different book details,
+    ● distributed across 3 different libraries,
+    ● with at least 1 library holding multiple copies of a book, and
+    ● at least one copy on counter reserve
+  (ii) 10 LOANS
+    ● 8 of which must have been completed, with at least one of these
+    returned late and one still due,
+    ● borrowed from at least 2 different libraries, and
+    ● by at least 3 different borrowers
+  (iii) 2 RESERVE entries (note MLib deletes reserve entries after they have been
+  fulfilled ie. the user has borrowed the book)
+  
+  
+Your inserted data must conform to the following rules:
+  (i) You may treat all of the data that you add as a single transaction since you are
+  setting up the initial test state for the database.
+  (ii) The primary key values for this data should be hardcoded values (i.e. NOT make
+  use of sequences) and must consist of values below 100.
+  (iii) Dates used must be chosen between the 1st June 2021 and 13th September 2021
+  (inclusive). The data added must be sensible eg. the return of a loan must be after
+  the loan was taken out.
+
+
 
 ### Part 2
 
