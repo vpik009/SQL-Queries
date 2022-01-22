@@ -166,14 +166,18 @@ procedure name order and within a procedure in item code order.
 
 
 Find the ninth most expensive procedure/s for a procedure carried out on an admission.
+
 As an example, say we have the following "dummy" data (note these are just representative
 numbers, they do not reflect the data you have access to):
 The fifth most expensive procedure/s here are those identified by adprc_nos 1240 and 1201 in this
 "dummy" data.
+
+![alt text](https://github.com/vpik009/SQL-Queries/blob/main/Schemas/9bimg.PNG)
 
 Your report must show the admission procedure number, the procedure code, the admission
 number, the patient id who this procedure was carried out on, the date and time (time in 24 hour
 format) that the procedure was carried out and the total cost for the procedure. The total cost will be
 the cost charged to this patient for this procedure plus the cost for extra items required. The output
 should be in admission procedure number order
+
 
