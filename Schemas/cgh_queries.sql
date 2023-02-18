@@ -227,7 +227,6 @@ ORDER BY
 
 COMMIT;
 /*
-    Q9a (FIT2094 only) or Q9b (FIT3171 only)
 */
 -- PLEASE PLACE REQUIRED SQL STATEMENT FOR THIS PART HERE
 -- ENSURE that your query is formatted and has a semicolon (;)
